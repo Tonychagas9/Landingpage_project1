@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta nema="description" content="Helena salão de beleza é um espaço dedicato para mulheres que oferece diversos servições de beleza e estetica como Microblading, Limpeza de Pele...Ver todos os nossos serviçoes disponiveis" >
+    <meta name="keywords" content="Microblading, Limpeza de Pele, Dermaplaning, Cavitação, Unhas de Gel">
+    <title>Helena</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5b1748defe.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="navbar">
+            <img src="pictures/header_img.png" alt="" id="header_img">
+            <a href="#home">Home</a>
+            <a href="#news">Sobre nós</a>
+            <div class="dropdown">
+                <button class="dropbtn">Serviços
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Beleza Facial</a>
+                    <a href="#">Manicure</a>
+                    <a href="#">Pedicure</a>
+                    <a href="#">Corpo</a>
+                </div>
+            </div>  
+            <a href="#" class="search" id="float-right"><i class="fa fa-search" aria-hidden="true"></i></a>
+        </div>
+    </div>
+    <section id="description">
+
+        <div class="description">
+            <h2>Sobre Nós</h2>
+                <p class="about">
+                    Temos como objetivo atender aos nossos clientes com excelência, dedicação e atenção 
+                    excepcionais para satisfazer às suas expectativas. Esperamos que se sinta bem em 
+                    nosso salão e saia com a auto-estima maior do que quando entrou. Atendemos a cada cliente de forma personalizada, para que você possa se sentir 
+                    especial, e para que juntos possamos realçar a beleza única de cada pessoa. 
+                </p>
+                <p>Horario de funcionamento</p>
+                <p class="date">Abertos de Segunda à Sexta das 10 as 19 horas</p>
+        </div>    
+
+        <div id="subscription-form">
+            <div id="form">
+            <p>Preencha para receber mais informações</p>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Nome</label> 
+                            <input type="text" name="name" placeholder="Digite seu nome">                            
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                            <input type="email" name="email" placeholder="Digite o seu email">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Número para Contato</label>
+                            <input type="text" name="phone" placeholder="Digite o seu Número">
+                    </div>
+                    <div class="form-group">
+                        <label for="interest">Principal interesse</label>
+                            <select name="interest" id="">
+                                <option value=""disable selected>Selecione</option>
+                                <option value="face">Beleza Facial</option>
+                                <option value="nails">Manicure</option>
+                                <option value="body">Pedicure e Corpo</option>
+                            </select>
+                    </div>
+                    <input type="submit" class="btn" value="Quero saber mais">
+                </form>
+            </div> 
+        </div>
+    </section>
+    <section cle id="key-services">
+        <h2>Alguns de nossos serviços mais requisitados:</h2>
+        <div class="services">
+
+            <div class="service">
+                <div id="service-1" class="service-img"></div>
+                    <p>Cavitação</p>   
+            </div>
+            <div class="service">
+                <div id="service-2" class="service-img"></div>
+                    <p>Dermaplaning</p>    
+            </div>
+            <div class="service">
+                <div id="service-3" class="service-img"></div>
+                    <p>Limppeza de Pele</p>
+            </div>
+            <div class="service">
+                <div id="service-4" class="service-img"></div>
+                    <p>Microblading</p>
+            </div>
+            <div class="service">
+                <div id="service-5" class="service-img"></div>
+                    <p>Unhas de Gel</p>
+            </div>
+        </div>
+        <h2>Você também pode ver e saber mais na nossa nos seguindo, e só clicar na imagem abaixo</h2>
+        <a href="https://www.instagram.com/helenafreitas277/"><img src="pictures/link.png" alt="" id="link-img"></a>
+    </section>
+    <footer id="inf">
+        <div class="contactos">
+            <div class="col-4">
+                <i class="fas fa-phone"></i>
+                <p class="contact-text">  +351 920 788 777  </p>
+            </div>
+            <div class="col-4">
+                <i class="fas fa-envelope"></i>
+                <p class="contact-text">  info@beleza.com  </p>
+            </div>
+            <div class="col-4">
+                <i class="fas fa-map-marker-alt"></i>
+                <p class="contact-text">  Avenida da Republica 789  </p>
+            </div>
+        </div>
+        <div class="soc">
+            <a href="#" class="fa fa-facebook" id="social"></a>
+            <a href="#" class="fa fa-twitter" id="social"></a>
+            <a href="#"class="fa fa-instagram" id="social"></a>
+        </div>
+
+    </footer>
+</body>
+
+</html>

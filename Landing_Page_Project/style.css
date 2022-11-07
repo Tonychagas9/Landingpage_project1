@@ -1,0 +1,383 @@
+* {
+  font-family: "Montserrat";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}  
+
+[class*="col-"] {
+  float: left;
+}
+
+.row::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row {
+  display: inline;
+}
+
+#float-right {
+   float: right;
+}
+
+body {
+  background-color: rgb(151, 146, 146);
+  width: auto;
+  margin: 0.2%;
+  padding: 0.1%;
+}
+
+.header_img {
+  display: none;
+  width: auto;
+
+}
+
+.navbar { 
+    overflow: hidden;
+    background-color: rgb(32, 31, 31);
+    font-family: Arial;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 0.1%;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    padding: 14px 15px;
+    text-decoration: none;
+    font-family: Montserrat;
+    align-content: inherit;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0; 
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: rgba(187, 169, 69, 0.863);
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: rgb(0, 0, 0);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: rgb(155, 147, 147);
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .search {
+    position: relative;
+    float: right;
+  }
+
+  .header {
+    position: static;
+    border: 1px;
+  }
+
+  #header_img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+  }
+
+#description {
+  background: linear-gradient(rgb(0,0,0,0.7), rgb(0,0,0,0.7)), url("../pictures/background_img2.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #ffffff;
+}
+
+h2,.date {
+  color: #bda628;
+}
+
+h2 {
+  font-size: 3em;
+  margin-bottom: 1em;
+}
+
+.about {
+  font-size: 1em;
+  text-decoration: uppercase;
+  max-width: 350px;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+p {
+  font-size: 1.2em;
+  margin-bottom: 3em;
+}
+
+.date {
+  font-weight: bold;
+  font-family: monospace;
+  font-weight: 950;
+}
+
+#subscription-form {
+  background-color: #bda628;
+  padding: 2em;
+  max-width: 22%;
+  border-radius: 15px;
+
+}
+
+#subscription-form p {
+  font-size: 1.5em;
+  color: rgb(32, 31, 31);
+  margin-bottom: 1em;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.8em;
+}
+
+.form-group label {
+  color: #ffffff;
+  margin-bottom: .3em;
+  font-weight: bold;
+}
+
+.form-group input, 
+.form-group select {
+  padding: 6px 8px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.btn {
+  background-color: rgb(32, 31, 31);
+  color: #ffffff;
+  text-transform: uppercase;
+  width: 100%;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  opacity: 0.8;
+  border-radius: 32px;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+#key-services {
+  background: linear-gradient(rgb(0,0,0,0.7), rgb(0,0,0,0.7)), url("../pictures/background_img1.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+  width: 100%;
+  height: auto;
+  margin: 00.1%;
+}
+
+#key-services h2 {
+  text-align: center;
+  padding: 1em;
+  font-weight: 600;
+  font-family: Montserrat;
+}
+
+.services{
+  display: flex;
+  justify-content: space-around;
+  padding: 1em;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.service {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 20%;
+  color: #ffffff;
+}
+
+.service .service-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: red;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 1em;
+}
+
+#service-1 {
+  background-image: url("../pictures/cavitação.png");
+  
+}
+
+#service-2 {
+  background-image: url("../pictures/Dermaplaning.png");
+}
+
+#service-3 {
+  background-image: url("../pictures/Limpeza-de-pele.png");
+}
+
+#service-4 {
+  background-image: url("../pictures/Microblading.png");
+}
+
+#service-5 {
+  background-image: url("../pictures/Unhas-de-Gel.png");
+}
+
+#link-img {
+  display: block;
+  margin-left: 25%;
+  margin-right: auto;
+  margin-bottom: 1em;
+  width: 50%;
+  border-radius: 10%;
+  padding: 2em;
+}
+
+#inf {
+  background-color: rgb(32, 31, 31);
+  display: flex;
+  justify-content: space-around;
+  padding: 1em;
+  height: auto;
+  margin: 0 auto;
+}
+
+.col-4 {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  padding: 1em;
+  margin: 0 auto;
+  color: #ffffff;
+  height: auto;
+  justify-content: space-between;
+}
+
+#social {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  color: white;
+}
+
+.fa-twitter {
+  color: white;
+}
+
+.fa-instagram {
+  color: white;
+}
+
+@media (max-width: 450px ) {
+  .header{
+    flex-direction: column;
+  }
+  #description {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .description {
+    padding: 2em;
+  }
+
+  .description h2 {
+    margin-bottom: .5em;
+  }
+
+  #subscription-form {
+    max-width: 70%;
+    margin-bottom: 2em;
+  }
+
+  .services {
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    padding: 2em;
+  }
+
+  .service {
+    max-width: 100%;
+    margin-bottom: 1em;
+  }
+  
+  #key-services {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #key-services h2{
+    font-size: medium;
+  }
+
+  #inf {
+    flex-direction: column;
+    align-items: center center center;
+    width: auto;
+    padding: 1em;
+    margin-bottom: .5em;
+  }
+
+}
